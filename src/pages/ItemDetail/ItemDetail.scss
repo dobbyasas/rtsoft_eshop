@@ -1,0 +1,46 @@
+$green: #07944a;
+
+.product-page{
+  margin-top: 30px;
+}
+
+.item-page {
+  .item-name {
+    color: $green;
+    font-size: 2em;
+  }
+
+  .item-description {
+    font-size: 1.2em;
+  }
+
+  .item-price {
+    color: $green;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  .item-image {
+    width: 10px;
+    height: auto;
+  }
+
+  .add-to-cart-btn {
+    background-color: $green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    &:hover {
+      background-color: darken($green, 10%);
+      color: white;
+    }
+  }
+}

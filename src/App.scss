@@ -1,0 +1,93 @@
+$green: #07944a;
+$white: #f3f3f3;
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: $white;
+}
+
+html {
+  background-color: $white;
+}
+
+ul{
+  list-style: none;
+}
+
+h6 {
+  color: $green;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 50px 1fr;
+  height: 100vh;
+}
+
+.Header {
+  grid-column: span 2;
+  z-index: 1;  
+}
+
+.NewSideBar {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.Shop {
+  overflow: auto;
+  padding: 20px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3 ;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+a{
+  color: $green !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+
+.btn-custom {
+  color: $green !important; 
+  background-color: $white !important;
+  border-color: $green !important;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white !important;
+    background-color: $green !important;
+    border-color: $green !important;
+  }
+}

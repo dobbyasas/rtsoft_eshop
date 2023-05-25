@@ -1,0 +1,56 @@
+.SideBar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: #07944a;
+    height: calc(100% - 60px);
+    width: 250px;
+    background-color: rgb(220, 220, 220);
+    top: 80px;
+    left: 0;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .SidebarList {
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .SidebarList .active {
+    font-weight: bold;
+  }
+  
+  .SidebarList li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+  }
+  
+  .SidebarList li a:hover {
+    background-color: #ddd;
+  }
+  
+  .SideBar.hidden {
+    display: none;
+  }
+
+  .show-sidebar-icon {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  

@@ -1,0 +1,28 @@
+.Shop {
+  padding: 1em;
+  transition: filter 0.3s ease;
+
+  &.blur {
+    filter: brightness(50%) blur(5px);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+  .blur {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+    position: relative;
+  }  
+
+  .blur::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+  }
