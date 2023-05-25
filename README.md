@@ -1,4 +1,4 @@
-# rtsoft_eshop
+# RTSoft eshop
 
 E-shop created on the basis of professional practices at RTSoft.
 
